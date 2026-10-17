@@ -1,0 +1,18 @@
+{
+  "SqlSources": {
+    "Databases": [
+      {
+        "Id": "azure-sql",
+        "Name": "Azure SQL Server",
+        "ConnectionStringName": "SqlDatabase",
+        "Enabled": true,
+        "DiscoverDatabases": true,
+        "IncludeDatabases": ["*"],
+        "ExcludeDatabases": ["master", "model", "msdb", "tempdb"]
+      }
+    ]
+  },
+  "ConnectionStrings": {
+    "SqlDatabase": "SET VIA AZURE APP SERVICE CONFIGURATION - DO NOT COMMIT CREDENTIALS"
+  }
+}
